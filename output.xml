@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-02-11T10:46:19.273315" rpa="false" schemaversion="5">
+<suite id="s1" name="basicRF" source="D:\66022916\basicRF.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2025-02-11T10:46:19.443740" level="INFO">Opening browser 'chrome' to base url 'http://automationexercise.com'.</msg>
+<arg>http://automationexercise.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-11T10:46:19.443566" elapsed="4.580652"/>
+</kw>
+<test id="s1-t1" name="Test Contact Us Form" line="43">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-11T10:46:24.025267" level="INFO">Opening browser 'chrome' to base url 'http://automationexercise.com'.</msg>
+<arg>http://automationexercise.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-11T10:46:24.025049" elapsed="3.706655"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-11T10:46:27.732442" elapsed="0.032291"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-02-11T10:46:27.776457" level="INFO">Page title is 'Automation Exercise'.</msg>
+<arg>Automation Exercise</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-02-11T10:46:27.766076" elapsed="0.010562"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-11T10:46:27.777408" level="INFO">Clicking element '//*[@href='/contact_us']'.</msg>
+<arg>//*[@href='/contact_us']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T10:46:27.777036" elapsed="0.781025"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-02-11T10:46:28.743504" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-11T10:46:28.743720" level="FAIL">InvalidSelectorException: Message: invalid selector: The result of the xpath expression "//*[@id="contact-page"]/div[2]/div[1]/div/h2/text()" is: [object Text]. It should be an element.
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7797402F5+28725]
+	(No symbol) [0x00007FF7796A2AE0]
+	(No symbol) [0x00007FF77953510A]
+	(No symbol) [0x00007FF77953BD70]
+	(No symbol) [0x00007FF77953EABC]
+	(No symbol) [0x00007FF77953EB8F]
+	(No symbol) [0x00007FF779588C85]
+	(No symbol) [0x00007FF7795895FC]
+	(No symbol) [0x00007FF7795D3437]
+	(No symbol) [0x00007FF7795AFFEF]
+	(No symbol) [0x00007FF7795D0181]
+	(No symbol) [0x00007FF7795AFD53]
+	(No symbol) [0x00007FF77957A0E3]
+	(No symbol) [0x00007FF77957B471]
+	GetHandleVerifier [0x00007FF779A6F30D+3366989]
+	GetHandleVerifier [0x00007FF779A812F0+3440688]
+	GetHandleVerifier [0x00007FF779A778FD+3401277]
+	GetHandleVerifier [0x00007FF77980AAAB+858091]
+	(No symbol) [0x00007FF7796AE74F]
+	(No symbol) [0x00007FF7796AA304]
+	(No symbol) [0x00007FF7796AA49D]
+	(No symbol) [0x00007FF779698B69]
+	BaseThreadInitThunk [0x00007FFF68557374+20]
+	RtlUserThreadStart [0x00007FFF6975CC91+33]
+</msg>
+<arg>//*[@id="contact-page"]/div[2]/div[1]/div/h2/text()</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="FAIL" start="2025-02-11T10:46:28.558395" elapsed="0.251817">InvalidSelectorException: Message: invalid selector: The result of the xpath expression "//*[@id="contact-page"]/div[2]/div[1]/div/h2/text()" is: [object Text]. It should be an element.
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7797402F5+28725]
+	(No symbol) [0x00007FF7796A2AE0]
+	(No symbol) [0x00007FF77953510A]
+	(No symbol) [0x00007FF77953BD70]
+	(No symbol) [0x00007FF77953EABC]
+	(No symbol) [0x00007FF77953EB8F]
+	(No symbol) [0x00007FF779588C85]
+	(No symbol) [0x00007FF7795895FC]
+	(No symbol) [0x00007FF7795D3437]
+	(No symbol) [0x00007FF7795AFFEF]
+	(No symbol) [0x00007FF7795D0181]
+	(No symbol) [0x00007FF7795AFD53]
+	(No symbol) [0x00007FF77957A0E3]
+	(No symbol) [0x00007FF77957B471]
+	GetHandleVerifier [0x00007FF779A6F30D+3366989]
+	GetHandleVerifier [0x00007FF779A812F0+3440688]
+	GetHandleVerifier [0x00007FF779A778FD+3401277]
+	GetHandleVerifier [0x00007FF77980AAAB+858091]
+	(No symbol) [0x00007FF7796AE74F]
+	(No symbol) [0x00007FF7796AA304]
+	(No symbol) [0x00007FF7796AA49D]
+	(No symbol) [0x00007FF779698B69]
+	BaseThreadInitThunk [0x00007FFF68557374+20]
+	RtlUserThreadStart [0x00007FFF6975CC91+33]
+</status>
+</kw>
+<kw name="Input Name">
+<arg>${NAME}</arg>
+<status status="NOT RUN" start="2025-02-11T10:46:28.810641" elapsed="0.000057"/>
+</kw>
+<kw name="Input Email">
+<arg>${EMAIL}</arg>
+<status status="NOT RUN" start="2025-02-11T10:46:28.810892" elapsed="0.000026"/>
+</kw>
+<kw name="Input Subject">
+<arg>${SUBJECT}</arg>
+<status status="NOT RUN" start="2025-02-11T10:46:28.811132" elapsed="0.000026"/>
+</kw>
+<kw name="Input Message">
+<arg>${MESSAGE}</arg>
+<status status="NOT RUN" start="2025-02-11T10:46:28.811355" elapsed="0.000021"/>
+</kw>
+<kw name="Upload File">
+<arg>${FILE_PATH}</arg>
+<status status="NOT RUN" start="2025-02-11T10:46:28.811775" elapsed="0.000023"/>
+</kw>
+<kw name="Click Submit Button">
+<status status="NOT RUN" start="2025-02-11T10:46:28.811967" elapsed="0.000021"/>
+</kw>
+<kw name="Click OK Button">
+<status status="NOT RUN" start="2025-02-11T10:46:28.812166" elapsed="0.000037"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Success! Your details have been submitted successfully.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-02-11T10:46:28.812472" elapsed="0.000041"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//*[@href='/']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-11T10:46:28.812668" elapsed="0.000041"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Automation Exercise</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-02-11T10:46:28.812936" elapsed="0.000024"/>
+</kw>
+<doc>Test the 'Contact Us' form submission process on the home page</doc>
+<status status="FAIL" start="2025-02-11T10:46:24.024422" elapsed="4.788798">InvalidSelectorException: Message: invalid selector: The result of the xpath expression "//*[@id="contact-page"]/div[2]/div[1]/div/h2/text()" is: [object Text]. It should be an element.
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7797402F5+28725]
+	(No symbol) [0x00007FF7796A2AE0]
+	(No symbol) [0x00007FF77953510A]
+	(No symbol) [0x00007FF77953BD70]
+	(No symbol) [0x00007FF77953EABC]
+	(No symbol) [0x00007FF77953EB8F]
+	(No symbol) [0x00007FF779588C85]
+	(No symbol) [0x00007FF7795895FC]
+	(No symbol) [0x00007FF7795D3437]
+	(No symbol) [0x00007FF7795AFFEF]
+	(No symbol) [0x00007FF7795D0181]
+	(No symbol) [0x00007FF7795AFD53]
+	(No symbol) [0x00007FF77957A0E3]
+	(No symbol) [0x00007FF77957B471]
+	GetHandleVerifier [0x00007FF779A6F30D+3366989]
+	GetHandleVerifier [0x00007FF779A812F0+3440688]
+	GetHandleVerifier [0x00007FF779A778FD+3401277]
+	GetHandleVerifier [0x00007FF77980AAAB+858091]
+	(No symbol) [0x00007FF7796AE74F]
+	(No symbol) [0x00007FF7796AA304]
+	(No symbol) [0x00007FF7796AA49D]
+	(No symbol) [0x00007FF779698B69]
+	BaseThreadInitThunk [0x00007FFF68557374+20]
+	RtlUserThreadStart [0x00007FFF6975CC91+33]
+</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-11T10:46:28.816526" elapsed="2.146776"/>
+</kw>
+<status status="FAIL" start="2025-02-11T10:46:19.274329" elapsed="11.689108"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="basicRF" id="s1" pass="0" fail="1" skip="0">basicRF</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
